@@ -6,13 +6,19 @@ body {
   display: flex;
   height: 100%;
   margin: 0;
-  padding: 0;
   width: 100%;
   align-items: center;
   justify-content: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 a {
@@ -21,10 +27,33 @@ a {
 
 img {
   padding-bottom: 1rem;
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
 }
 
 .container {
-  margin: 8rem;
+  margin-top: 8rem;
   margin-left: 4rem;
   margin-right: 4rem;
   display: flex;
@@ -34,10 +63,11 @@ img {
   max-width: 636px;
 }
 
-@media only screen and (min-width: 636px) {
+@media only screen and (max-width: 500px) {
   .container {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-top: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 

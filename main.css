@@ -6,6 +6,8 @@ body {
   display: flex;
   height: 100%;
   margin: 0;
+  padding: 0;
+  width: 100%;
   align-items: center;
   justify-content: center;
   -webkit-font-smoothing: antialiased;
@@ -15,6 +17,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+img {
+  padding-bottom: 1rem;
 }
 
 .container {
